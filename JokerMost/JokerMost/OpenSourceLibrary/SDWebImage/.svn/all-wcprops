@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage
+END
+MKAnnotationView+WebCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/MKAnnotationView+WebCache.h
+END
+SDImageCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDImageCache.h
+END
+SDWebImageDecoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImageDecoder.h
+END
+MKAnnotationView+WebCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/MKAnnotationView+WebCache.m
+END
+SDImageCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDImageCache.m
+END
+SDWebImageDecoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImageDecoder.m
+END
+SDWebImageManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImageManager.h
+END
+UIButton+WebCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIButton+WebCache.h
+END
+SDWebImageDownloaderOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImageDownloaderOperation.h
+END
+SDWebImageManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImageManager.m
+END
+UIImageView+WebCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIImageView+WebCache.h
+END
+UIImage+WebP.h
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIImage+WebP.h
+END
+UIButton+WebCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIButton+WebCache.m
+END
+SDWebImageDownloaderOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImageDownloaderOperation.m
+END
+UIImageView+WebCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIImageView+WebCache.m
+END
+UIImage+WebP.m
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIImage+WebP.m
+END
+NSData+ImageContentType.h
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/NSData+ImageContentType.h
+END
+SDWebImageDownloader.h
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImageDownloader.h
+END
+UIView+WebCacheOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIView+WebCacheOperation.h
+END
+NSData+ImageContentType.m
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/NSData+ImageContentType.m
+END
+UIView+WebCacheOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIView+WebCacheOperation.m
+END
+SDWebImageDownloader.m
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImageDownloader.m
+END
+UIImageView+HighlightedWebCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIImageView+HighlightedWebCache.h
+END
+SDWebImageCompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImageCompat.h
+END
+UIImageView+HighlightedWebCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIImageView+HighlightedWebCache.m
+END
+SDWebImagePrefetcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImagePrefetcher.h
+END
+UIImage+MultiFormat.h
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIImage+MultiFormat.h
+END
+SDWebImageCompat.m
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImageCompat.m
+END
+UIImage+GIF.h
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIImage+GIF.h
+END
+SDWebImagePrefetcher.m
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImagePrefetcher.m
+END
+UIImage+MultiFormat.m
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIImage+MultiFormat.m
+END
+UIImage+GIF.m
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/UIImage+GIF.m
+END
+SDWebImageOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/PMall.uni2uni.com/!svn/ver/1432/trunk/Mobile/iOS/PersonalShoppingMall/PersonalShoppingMall/OpenSourceLibraries/SDWebImage/SDWebImageOperation.h
+END
