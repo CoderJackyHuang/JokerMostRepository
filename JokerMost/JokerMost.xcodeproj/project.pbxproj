@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A87AC0AD19ED0D1B0070F53E /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87AC0AC19ED0D1B0070F53E /* CommentController.swift */; };
+		A87AC0B019ED10D90070F53E /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87AC0AF19ED10D90070F53E /* CommentCell.swift */; };
+		A87AC0B219ED10FE0070F53E /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A87AC0B119ED10FE0070F53E /* CommentCell.xib */; };
 		A898D37F19E6AC5A00121CE8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C57AB519E6139600AC5DD1 /* LaunchScreen.xib */; };
 		A8C57AAD19E6139600AC5DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C57AAC19E6139600AC5DD1 /* AppDelegate.swift */; };
 		A8C57AB419E6139600AC5DD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C57AB319E6139600AC5DD1 /* Images.xcassets */; };
@@ -16,6 +19,7 @@
 		A8C57AE119E6199900AC5DD1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C57AE019E6199900AC5DD1 /* UIViewExtension.swift */; };
 		A8C57AE419E61D6900AC5DD1 /* StringCommonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C57AE319E61D6900AC5DD1 /* StringCommonExtension.swift */; };
 		A8C57AE719E638FF00AC5DD1 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C57AE619E638FF00AC5DD1 /* HttpRequest.swift */; };
+		A8CAD85019ECF3B9000B6EBD /* PhotoBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CAD84F19ECF3B9000B6EBD /* PhotoBrowserController.swift */; };
 		A8DAA07219E652B7008A0836 /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DAA07119E652B7008A0836 /* RefreshView.swift */; };
 		A8DAA07419E652CC008A0836 /* RefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8DAA07319E652CC008A0836 /* RefreshView.xib */; };
 		A8DAA07619E65948008A0836 /* UIAlertViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DAA07519E65948008A0836 /* UIAlertViewExtenstion.swift */; };
@@ -58,6 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A87AC0AC19ED0D1B0070F53E /* CommentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
+		A87AC0AF19ED10D90070F53E /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentCell.swift; path = Views/Cells/CommentCell/CommentCell.swift; sourceTree = "<group>"; };
+		A87AC0B119ED10FE0070F53E /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CommentCell.xib; path = Views/Cells/CommentCell/CommentCell.xib; sourceTree = "<group>"; };
 		A8C57AA719E6139600AC5DD1 /* JokerMost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokerMost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C57AAB19E6139600AC5DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8C57AAC19E6139600AC5DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +78,7 @@
 		A8C57AE019E6199900AC5DD1 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Utilities/Extensions/UIViewExtensions/UIViewExtension.swift; sourceTree = "<group>"; };
 		A8C57AE319E61D6900AC5DD1 /* StringCommonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringCommonExtension.swift; path = Utilities/Extensions/StringExtensions/StringCommonExtension.swift; sourceTree = "<group>"; };
 		A8C57AE619E638FF00AC5DD1 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = Utilities/Network/HttpRequest.swift; sourceTree = "<group>"; };
+		A8CAD84F19ECF3B9000B6EBD /* PhotoBrowserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserController.swift; sourceTree = "<group>"; };
 		A8DAA07119E652B7008A0836 /* RefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RefreshView.swift; path = Views/CustomViews/RefreshView.swift; sourceTree = "<group>"; };
 		A8DAA07319E652CC008A0836 /* RefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RefreshView.xib; path = Views/CustomViews/RefreshView.xib; sourceTree = "<group>"; };
 		A8DAA07519E65948008A0836 /* UIAlertViewExtenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIAlertViewExtenstion.swift; path = Utilities/Extensions/UIAlertViewExtenstions/UIAlertViewExtenstion.swift; sourceTree = "<group>"; };
@@ -138,6 +146,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A87AC0AE19ED10B30070F53E /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				A87AC0AF19ED10D90070F53E /* CommentCell.swift */,
+				A87AC0B119ED10FE0070F53E /* CommentCell.xib */,
+			);
+			name = CommentCell;
+			sourceTree = "<group>";
+		};
 		A8C57A9E19E6139600AC5DD1 = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +312,7 @@
 		A8DAA07019E652A4008A0836 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				A87AC0AE19ED10B30070F53E /* CommentCell */,
 				A8DAA07819E6622F008A0836 /* JokerCell */,
 			);
 			name = Cells;
@@ -393,6 +411,8 @@
 				A8DAA0ED19E6B010008A0836 /* BaseRefreshController.swift */,
 				A8DAA0EE19E6B010008A0836 /* Main.storyboard */,
 				A8DAA0EF19E6B010008A0836 /* RootTabBarController.swift */,
+				A8CAD84F19ECF3B9000B6EBD /* PhotoBrowserController.swift */,
+				A87AC0AC19ED0D1B0070F53E /* CommentController.swift */,
 			);
 			path = CommonControllers;
 			sourceTree = "<group>";
@@ -523,6 +543,7 @@
 				A8DAA0FB19E6B010008A0836 /* Main.storyboard in Resources */,
 				A8C57AD719E615AD00AC5DD1 /* me.jpeg in Resources */,
 				A8DAA07C19E66263008A0836 /* JokerCell.xib in Resources */,
+				A87AC0B219ED10FE0070F53E /* CommentCell.xib in Resources */,
 				A8C57AB419E6139600AC5DD1 /* Images.xcassets in Resources */,
 				A8DAA07419E652CC008A0836 /* RefreshView.xib in Resources */,
 			);
@@ -545,6 +566,7 @@
 				A8DAA07619E65948008A0836 /* UIAlertViewExtenstion.swift in Sources */,
 				A8DAA0FC19E6B010008A0836 /* RootTabBarController.swift in Sources */,
 				A8DAA0AC19E66A7A008A0836 /* UIImage+WebP.m in Sources */,
+				A87AC0AD19ED0D1B0070F53E /* CommentController.swift in Sources */,
 				A8DAA07219E652B7008A0836 /* RefreshView.swift in Sources */,
 				A8C57AE119E6199900AC5DD1 /* UIViewExtension.swift in Sources */,
 				A8C57AE719E638FF00AC5DD1 /* HttpRequest.swift in Sources */,
@@ -559,6 +581,7 @@
 				A8DAA0A519E66A7A008A0836 /* SDWebImageDownloader.m in Sources */,
 				A8DAA0AE19E66A7A008A0836 /* UIImageView+WebCache.m in Sources */,
 				A8DAA0AD19E66A7A008A0836 /* UIImageView+HighlightedWebCache.m in Sources */,
+				A8CAD85019ECF3B9000B6EBD /* PhotoBrowserController.swift in Sources */,
 				A8DAA0A019E66A7A008A0836 /* MKAnnotationView+WebCache.m in Sources */,
 				A8DAA0FE19E6B010008A0836 /* LatestController.swift in Sources */,
 				A8DAA0FA19E6B010008A0836 /* BaseRefreshController.swift in Sources */,
@@ -571,6 +594,7 @@
 				A8DAA0A419E66A7A008A0836 /* SDWebImageDecoder.m in Sources */,
 				A8DAA0AF19E66A7A008A0836 /* UIView+WebCacheOperation.m in Sources */,
 				A8DAA0F819E6B010008A0836 /* AboutController.swift in Sources */,
+				A87AC0B019ED10D90070F53E /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

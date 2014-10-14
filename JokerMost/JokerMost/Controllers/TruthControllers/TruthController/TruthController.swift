@@ -19,7 +19,7 @@ class TruthController: BaseRefreshController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "热门";
+        self.title = "真相";
         downloadData(urlString: "http://m2.qiushibaike.com/article/list/imgrank?count=20&page=")
     }
     

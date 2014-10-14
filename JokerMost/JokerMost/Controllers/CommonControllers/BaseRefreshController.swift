@@ -14,7 +14,11 @@ import UIKit
 ///        统一管理数据显示
 /// @data   2014-10-09
 /// @author huangyibiao
-class BaseRefreshController: UIViewController, UITableViewDataSource, UITableViewDelegate, RefreshViewDelegate {
+class BaseRefreshController: UIViewController,
+    UITableViewDataSource,
+    UITableViewDelegate,
+    RefreshViewDelegate,
+    JokerCellDelegate {
     var refreshView: RefreshView?
     var dataSource = NSMutableArray()
     var tableView: UITableView?
@@ -24,11 +28,10 @@ class BaseRefreshController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.automaticallyAdjustsScrollViewInsets = false;
         self.view.backgroundColor = UIColor.whiteColor()
         // table view
-        self.tableView = UITableView(frame:
-            CGRectMake(0, 0, self.view.width(), self.view.height() - 49))
-        println(self.view.height() - 49)
+        self.tableView = UITableView(frame: CGRectMake(0, 64, self.view.width(), kScreenHeight - 49 - 64))
         self.tableView?.dataSource = self
         self.tableView?.delegate = self
         self.tableView?.separatorStyle = UITableViewCellSeparatorStyle.None
@@ -39,8 +42,8 @@ class BaseRefreshController: UIViewController, UITableViewDataSource, UITableVie
         // refresh view
         var array = NSBundle.mainBundle().loadNibNamed("RefreshView", owner: self, options: nil) as Array
         self.refreshView = array[0] as? RefreshView
-        self.refreshView!.delegate = self
         self.tableView!.tableFooterView = self.refreshView
+        self.refreshView!.delegate = self
     }
     
     ///
@@ -48,6 +51,7 @@ class BaseRefreshController: UIViewController, UITableViewDataSource, UITableVie
     /// @param urlString 请求地址，其中不指定page值
     func downloadData(#urlString: String) {
         let url = "\(urlString)\(self.currentPage)"
+        
         self.refreshView!.startLoadingMore()
         
         HttpRequest.request(urlString: url) { (data) -> Void in
@@ -81,6 +85,8 @@ class BaseRefreshController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier(self.cellIdentifier, forIndexPath: indexPath) as? JokerCell
         
+        cell?.delegate = self
+        
         if indexPath.row < self.dataSource.count {
             var dataDict = self.dataSource[indexPath.row] as NSDictionary
             cell?.data = dataDict
@@ -95,15 +101,25 @@ class BaseRefreshController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
         var index = indexPath.row
         var data = self.dataSource[index] as NSDictionary
-
+        
         return  JokerCell.cellHeight(data)
     }
     
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        var index = indexPath!.row
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var index = indexPath.row
         var data = self.dataSource[index] as NSDictionary
-        //        var commentsVC = YRCommentsViewController(nibName :nil, bundle: nil)
-        //        commentsVC.jokeId = data.stringAttributeForKey("id")
-        //        self.navigationController!.pushViewController(commentsVC, animated: true)
+        
+        let comment = CommentController()
+        comment.jokeId = data["id"] as? String
+        self.navigationController?.pushViewController(comment, animated: true)
+    }
+    
+    ///
+    /// JokerCellDelegate 代理方法实现
+    ///
+    func jokerCell(cell: JokerCell, didClickPicture picutre: String) {
+        let browser = PhotoBrowserController()
+        browser.bigImageUrlString = picutre
+        self.navigationController?.pushViewController(browser, animated: true)
     }
 }

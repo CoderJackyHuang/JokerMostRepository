@@ -41,6 +41,7 @@ class RefreshView: UIView {
         super.awakeFromNib()
         
         self.loadingIndicator?.hidden = true
+        self.loadMoreButton.setTitle("点击加载更多", forState: UIControlState.Normal)
     }
     
     ///

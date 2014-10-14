@@ -42,6 +42,19 @@ extension UIView {
     }
     
     ///
+    /// 获取或设置origin
+    ///
+    func origin() ->CGPoint {
+        return self.frame.origin
+    }
+    
+    func origin(let origin: CGPoint) {
+        var rect = self.frame
+        rect.origin = origin
+        self.frame = rect
+    }
+    
+    ///
     /// 获取或设置width
     ///
     func width() ->CGFloat {

@@ -42,8 +42,17 @@ class HttpRequest: NSObject {
     /// @param completion 请求完成或者请求失败的回调
     /// @return 请求成功时，会返回NSDictionary?的字典格式的数据，如果请求失败，会返回nil
     ///
-    class func request(#urlString: String, completion: (data: NSDictionary?) ->Void) {
-        let url = NSURL.URLWithString(urlString)
+    class func request(#urlString: String?, completion: (data: NSDictionary?) ->Void) {
+        if urlString == nil {
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                println("urlstring 为空")
+                // 请求出现，则返回nil对象表示
+                completion(data: nil)
+            })
+            return
+        }
+        
+        let url = NSURL.URLWithString(urlString!)
         let request = NSURLRequest(URL: url)
         
         let queue = NSOperationQueue()

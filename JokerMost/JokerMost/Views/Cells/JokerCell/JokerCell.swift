@@ -17,7 +17,7 @@ protocol JokerCellDelegate {
     /// @brief 点击照片查看时的代理回调方法
     /// @param cell 点击的cell
     /// @param didClickPicture 点击的图片
-    func jokerCell(cell: JokerCell, didClickPicture picutre: UIImageView)
+    func jokerCell(cell: JokerCell, didClickPicture picutre: String)
 }
 
 let kCellWidth = UIScreen.mainScreen().bounds.width
@@ -37,7 +37,8 @@ class JokerCell: UITableViewCell {
     
     var delegate: JokerCellDelegate?
     var data: NSDictionary!
-    var largeImageURL: String?
+    
+    private var largeImageURL: String?
     
     ///
     /// @brief 生命周期函数
@@ -84,8 +85,8 @@ class JokerCell: UITableViewCell {
             self.contentLabel!.height(height)
         }
         
-        let imageUrlString = data["image"] as? NSString
-        if imageUrlString?.length == 0 {
+        let imageUrlString = data["image"] as? String
+        if (imageUrlString == nil) {
             self.picktureImageView!.hidden = true
             self.bottomView!.originY(self.contentLabel!.bottomY())
         } else {
@@ -93,16 +94,15 @@ class JokerCell: UITableViewCell {
             var preId = imgId.substringToIndex(4)
             
             // 小图
-            var imagURL = "http://pic.moumentei.com/system/pictures/\(preId)/\(imgId)/small/\(imageUrlString)"
-            self.avatarImageView!.sd_setImageWithURL(NSURL.URLWithString(imagURL),
-                placeholderImage: UIImage(named: "avatar.jpg"))
-            
-            // 大图，点击放大使用
-            self.largeImageURL = "http://pic.moumentei.com/system/pictures/\(preId)/\(imgId)/medium/\(imageUrlString)"
+            var imagURL = "http://pic.moumentei.com/system/pictures/\(preId)/\(imgId)/small/\(imageUrlString!)"
             self.picktureImageView!.sd_setImageWithURL(NSURL.URLWithString(imagURL),
                 placeholderImage: UIImage(named: "avatar.jpg"))
+            self.picktureImageView!.originY(self.contentLabel!.bottomY() + 5)
+            self.picktureImageView!.hidden = false
+            self.bottomView!.originY(self.picktureImageView!.bottomY())
+            // 大图，点击放大使用
+            self.largeImageURL = "http://pic.moumentei.com/system/pictures/\(preId)/\(imgId)/medium/\(imageUrlString!)"
         }
-        
         
         // 顶、踩
         let votes = self.data["votes"] as? NSDictionary
@@ -125,6 +125,7 @@ class JokerCell: UITableViewCell {
         if let count: AnyObject = commentCount {
             self.commentLabel!.text = "评论(\(count))"
         }
+        return;
     }
     
     ///
@@ -135,15 +136,18 @@ class JokerCell: UITableViewCell {
     /// @param data 数据源
     /// @return cell的高度
     class func cellHeight(data: NSDictionary) ->CGFloat {
+        var h: CGFloat = 0.0;
         if let content = data["content"] as? String {
             var height = content.height(17, width: kCellWidth - 20)
-            
-            if let img = data["image"] as? NSString {
-                return 59.0 + height + 40.0
+
+            h = 60.0 + height + 5.0 + 40.0 + 5.0
+            if let img = data["image"] as? String {
+                if !img.isEmpty {
+                    h = 60.0 + height + 40.0 + 5.0 + 112.0 + 5.0
+                }
             }
-            return 59.0 + height + 5.0 + 112.0 + 40.0
         }
-        return 0.0
+        return h
     }
     
     ///
@@ -151,8 +155,7 @@ class JokerCell: UITableViewCell {
     
     ///
     /// @brief 点击图片
-    private func onTapPicture(sender: UITapGestureRecognizer!) {
-        var picture = sender.view as UIImageView
-        self.delegate?.jokerCell(self, didClickPicture: picture)
+    func onTapPicture(sender: UITapGestureRecognizer!) {
+        self.delegate?.jokerCell(self, didClickPicture: self.largeImageURL!)
     }
 }

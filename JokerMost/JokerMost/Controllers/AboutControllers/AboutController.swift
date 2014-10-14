@@ -9,27 +9,17 @@
 import UIKit
 
 class AboutController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = "关于作者"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    ///
+    /// 点击标哥CSDN
+    @IBAction func onButtonClicked(sender: UIButton) {
+        if UIApplication.sharedApplication().canOpenURL(NSURL(string: "http://blog.csdn.net/woaifen3344")) {
+            UIApplication.sharedApplication().openURL(NSURL(string: "http://blog.csdn.net/woaifen3344"))
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

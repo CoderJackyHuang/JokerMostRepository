@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
@@ -10,24 +11,21 @@
             <rect key="frame" x="0.0" y="0.0" width="279" height="40"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="kx0-95-uQf">
-                    <rect key="frame" x="142" y="-1" width="37" height="37"/>
-                    <color key="color" red="0.93333333330000001" green="0.27058823529999998" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="142" y="0.0" width="37" height="37"/>
-                    </variation>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="D2l-hr-KUF">
+                    <rect key="frame" x="134" y="10" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="color" red="0.9275490419708029" green="0.52367168659999996" blue="0.30013558270000001" alpha="1" colorSpace="calibratedRGB"/>
                 </activityIndicatorView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj7-Lj-eu9">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lBg-sl-tjQ">
+                    <rect key="frame" x="0.0" y="5" width="320" height="30"/>
+                    <autoresizingMask key="autoresizingMask"/>
                     <state key="normal" title="点击加载更多">
-                        <color key="titleColor" red="0.93333333330000001" green="0.27058823529999998" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.92754904199999999" green="0.52367168659999996" blue="0.30013558270000001" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
-                    </variation>
                     <connections>
-                        <action selector="onLoadMoreButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="EIU-SO-02s"/>
+                        <action selector="onLoadMoreButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="mOH-hW-FdC"/>
+                        <action selector="onLoadMoreButtonClicked:" destination="-2" eventType="touchUpInside" id="y4B-ZO-5LH"/>
                     </connections>
                 </button>
             </subviews>
@@ -37,23 +35,16 @@
             <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <variation key="default">
-                <mask key="subviews">
-                    <exclude reference="kx0-95-uQf"/>
-                    <exclude reference="aj7-Lj-eu9"/>
-                </mask>
-            </variation>
-            <variation key="heightClass=compact-widthClass=regular">
-                <mask key="subviews">
-                    <include reference="kx0-95-uQf"/>
-                    <include reference="aj7-Lj-eu9"/>
-                </mask>
-            </variation>
             <connections>
-                <outlet property="loadMoreButton" destination="aj7-Lj-eu9" id="6oA-Uv-u0H"/>
-                <outlet property="loadingIndicator" destination="kx0-95-uQf" id="q7Q-iu-vpe"/>
+                <outlet property="loadMoreButton" destination="lBg-sl-tjQ" id="4T1-8H-et7"/>
+                <outlet property="loadingIndicator" destination="D2l-hr-KUF" id="VyX-ag-o8A"/>
             </connections>
             <point key="canvasLocation" x="261.5" y="200"/>
         </view>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
